@@ -1,6 +1,5 @@
 import React from 'react'
 import TextMedium from '../Text/TextMedium'
-import ImgUser from './ImgUser'
 import './UserNav.css'
 
 function UserNav() {
@@ -10,7 +9,7 @@ function UserNav() {
             <TextMedium>yosuanmulti@gmail.com</TextMedium>
             
         </div>
-        <ImgUser></ImgUser> 
+         
     </div>
   )
 }

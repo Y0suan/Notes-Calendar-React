@@ -30,7 +30,7 @@
     align-items: center;
     font-size: 30px;
 }
-.imglogin{
+.imglogin3{
     
     background-image: url(../assets/loginimg2.png);
     background-size: cover;
@@ -38,7 +38,7 @@
     height: 400px;
 }
 @media (max-width: 768px){
-    .imglogin{
+    .imglogin3{
         background-image: url(../assets/loginimg.png);
         background-size: cover;
         width: 40%;
@@ -46,7 +46,7 @@
     }
 }
 @media (max-width: 425px){
-    .imglogin{
+    .imglogin3{
         display: none;
     }
 }

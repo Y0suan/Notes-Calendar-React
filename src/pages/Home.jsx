@@ -1,22 +1,21 @@
 import React from 'react';
 import Createbtn from '../component/ButtonLink/Createbtn';
 import LoginBtn from '../component/ButtonLink/LoginBtn';
-import UserNav from '../component/User/UserNav';
+import ContbtnHome from '../component/Conteiners/ContbtnHome';
+import ContTextHome from '../component/Conteiners/ContTextHome';
+import TextTitle from '../component/Text/TextTitle';
 import './Home.css';
 
 
-function Home() {
+function Home({user}) {
   return (
     <div className='todo'>
-        <div className='text'>
-            <h1>Note Calendar</h1>
+      <ContTextHome>
+            <TextTitle>Note Calendar</TextTitle>
 
-            {/* <UserNav></UserNav> */}
-
-            <div className='btn'>
-            <LoginBtn/> <Createbtn/>
-            </div> 
-        </div>
+            {  user.data?.email || <ContbtnHome ><LoginBtn/> <Createbtn/></ContbtnHome> }
+            
+        </ContTextHome>
         <div className='img'></div>
     </div>
   )
